@@ -6,6 +6,7 @@ import javax.net.ssl.SSLEngine;
 
 public class Day1Aug31 {
 	//Problem1
+	//The description of the problem.
 	public static int findTarget(int target, int[] array) {
 		HashSet<Integer> mySet = new HashSet<Integer>();
 		HashMap<Integer, Integer> myMap = new HashMap<Integer, Integer>();
