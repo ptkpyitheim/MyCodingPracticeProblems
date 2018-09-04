@@ -6,7 +6,11 @@ import javax.net.ssl.SSLEngine;
 
 public class Day1Aug31 {
 	//Problem1
-	//The description of the problem.
+	/*
+	 * TwoSum: Given an array of integers, return indices of the two numbers such that they add up to
+	 * a specific target. You may assume that each input would have exactly one solution, and
+	 * you may not use the same element twice (What if there are duplicates?)
+	 */
 	public static int findTarget(int target, int[] array) {
 		HashSet<Integer> mySet = new HashSet<Integer>();
 		HashMap<Integer, Integer> myMap = new HashMap<Integer, Integer>();
@@ -33,6 +37,10 @@ public class Day1Aug31 {
 	}
 	
 	//Problem2
+	/*
+	 * Palindrome: Given a string, write a program that returns a boolean, indicating
+	 * whether or not it is a palindrome. hint: .toCharArray();
+	 */
 	public static boolean isPal(String pal) {
 		if(pal.length()==0 || pal.length()==1) {
 			return true;
@@ -44,6 +52,10 @@ public class Day1Aug31 {
 	}
 	
 	//Problem3
+	/*
+	 * Reverse Strings: Given a string, write a function that returns a string with each
+	 * word reversed individually (Reverse letters in each word).
+	 */
 	public static String reverse(String s) {
 		if(s.length() == 0) {
 			return s;
@@ -52,6 +64,11 @@ public class Day1Aug31 {
 	}
 	
 	//Problem4
+	/*
+	 * Repeated words in a string: Given a sentence(string), write a function that returns a string
+	 * with each word replaced by Y if it has been seen before or N otherwise.
+	 * TRY THIS PROBLEM WITH RECURION!
+	 */
 	public static StringBuilder repeatWords(String word) {
 		HashMap<Character,Integer> myMap = new HashMap<Character,Integer>();
 		StringBuilder newStr = new StringBuilder();
@@ -78,7 +95,23 @@ public class Day1Aug31 {
 		}
 		return newStr;
 	}
+	
+	//My own practice problem
+	/* Write a function that inserts the given letter in between the letters of a given string.
+	 * E.g. "duck" would return "dauacak"
+	 */
+	public static String addsLetter(String s, String d) {
+		if (s.length() == 1) {
+			return s;
+		}
+		return s.charAt(0) + d + addsLetter(s.substring(1, s.length()),d);
+	}
 
+	
+	
+	
+	
+	//MAIN FUNCTION
 	public static void main(String[] args) {
 		//Problem1Test
 //		int [] array = {1,1,2,2,4,6,2};
@@ -91,7 +124,10 @@ public class Day1Aug31 {
 //		System.out.println(reverse("bear"));
 		
 		//Problem4Test
-		System.out.println(repeatWords("killing"));		
+		System.out.println(repeatWords("killing"));
+		
+		//MyPracticeProblemTest
+		System.out.println(addsLetter("Washington", "a"));
 	}
 
 }
