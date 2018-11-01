@@ -96,6 +96,16 @@ public class Day1Aug31 {
 		return newStr;
 	}
 	
+	//Problem5
+	/*
+	 * Merge two sorted arrays: Given two sorted arrays, write a function 
+	 * that returns an array with the elements of the arrays merged in sorted order.
+	 */
+	public static int[] sortedArray(int[] arr1, int[] arr2) {
+		
+		return arr1;
+	}
+	
 	//My own practice problem
 	/* Write a function that inserts the given letter in between the letters of a given string.
 	 * E.g. "duck" would return "dauacak"
