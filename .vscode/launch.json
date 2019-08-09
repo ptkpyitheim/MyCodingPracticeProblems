@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - C1_ArraysAndStrings",
+            "request": "launch",
+            "mainClass": "C1_ArraysAndStrings",
+            "projectName": "CSE247R Coding Practice"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CTCIProblems",
+            "request": "launch",
+            "mainClass": "CTCIProblems",
+            "projectName": "CSE247R Coding Practice"
+        }
+    ]
+}
