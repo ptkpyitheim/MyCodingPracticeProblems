@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - C2_LinkedLists",
+            "request": "launch",
+            "mainClass": "C2_LinkedLists",
+            "projectName": "CSE247R Coding Practice"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - C1_ArraysAndStrings",
             "request": "launch",
             "mainClass": "C1_ArraysAndStrings",

@@ -237,8 +237,9 @@ public class C1_ArraysAndStrings {
     /**
      * 1.9 String Rotation
      */
-    public static boolean stringRotation(String s1, String s2) {
-        return true;
+    public static boolean isSubString(String s1, String s2) {
+        String s1s1 = s1 + s1;
+        return (s1.length() == s2.length()) && s1s1.contains(s2);
     }
 
 
@@ -257,6 +258,8 @@ public class C1_ArraysAndStrings {
 
         // System.out.println(oneAway("pale", "bake"));
 
-        System.out.println(stringCompression("abbbccdd"));
+        // System.out.println(stringCompression("abbbccdd"));
+
+        System.out.println(isSubString("waterbottle", "erbottlewwats"));
     }
 }
