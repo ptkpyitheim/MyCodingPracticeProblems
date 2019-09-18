@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - HyperLoop",
+            "request": "launch",
+            "mainClass": "Enterprise_Interview_Q_Project.HyperLoop",
+            "projectName": "CSE247R Coding Practice"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - C2_LinkedLists",
             "request": "launch",
             "mainClass": "C2_LinkedLists",
